@@ -2,13 +2,13 @@
 
 **See your Terminal input mode at a glance.**
 
-<img width="1536" height="1024" alt="CursorTint Title" src="https://github.com/user-attachments/assets/4687a9d7-2915-4bb6-bdd0-eae3d900976b" />
+<img src="images/cursortint-title.png" alt="CursorTint" width="100%">
 
 Using the wrong input mode can result in unintended text in Terminal.  
 CursorTint makes the current input mode visible through the cursor color.  
 U.S. input uses the Terminal default cursor color, while non-U.S. input is highlighted with `#EB5F5F`.
 
-<img width="720" alt="CursorTint_GIF" src="https://github.com/user-attachments/assets/31bcea05-aff8-4bba-8a0f-426b134c9d79" />
+<img src="images/cursortint-demo.gif" alt="CursorTint demo" width="720">
 
 The highlight color `#EB5F5F` was chosen after testing it against multiple Terminal background colors for good visibility without being overly harsh.
 
@@ -27,7 +27,7 @@ CursorTint is signed with Developer ID and notarized by Apple.
 
 Launch CursorTint and leave it running in the menu bar.
 
-<!-- Menu bar icon image -->
+<img src="images/menu-bar-icon.png" alt="CursorTint menu bar icon">
 
 - **U.S. input** → uses the default cursor color of the current Terminal profile
 - **Non-U.S. input** → highlights the cursor with `#EB5F5F`

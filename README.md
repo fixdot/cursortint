@@ -27,7 +27,7 @@ CursorTint is signed with Developer ID and notarized by Apple.
 
 Launch CursorTint and leave it running in the menu bar.
 
-<img src="images/menu-bar-icon.png" alt="CursorTint menu bar icon">
+<img src="images/menu-bar-icon.png" alt="CursorTint menu bar icon" width="132">
 
 - **U.S. input** → uses the default cursor color of the current Terminal profile
 - **Non-U.S. input** → highlights the cursor with `#EB5F5F`

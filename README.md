@@ -48,7 +48,7 @@ The menu bar provides:
 ## Compatibility
 
 - macOS 12 or later
-- Terminal.app only
+- Tested and supported on Terminal.app. Other terminal applications have not been tested.
 - Apple Silicon: tested
 - Intel Mac: built as a Universal Binary for Intel Macs that support macOS 12 or later, but not tested on actual Intel hardware
 

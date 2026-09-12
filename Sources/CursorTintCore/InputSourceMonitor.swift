@@ -15,6 +15,12 @@ import Carbon
 final class InputSourceMonitor {
 	private var observer: NSObjectProtocol?
 
+	private static let defaultCursorInputSourceIDs: Set<String> = [
+		"com.apple.keylayout.US",
+		"com.apple.keylayout.ABC",
+		"com.apple.keylayout.USExtended",
+	]
+
 	/// Returns the identifier of the currently selected input source.
 	func currentInputSourceID() -> String {
 		guard
@@ -35,7 +41,9 @@ final class InputSourceMonitor {
 
 	/// Returns whether CursorTint should highlight the cursor for the current input source.
 	func shouldHighlightCursor() -> Bool {
-		currentInputSourceID() != "com.apple.keylayout.US"
+		!Self.defaultCursorInputSourceIDs.contains(
+			currentInputSourceID()
+		)
 	}
 
 	/// Starts observing input-source changes on the main queue.

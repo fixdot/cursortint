@@ -29,8 +29,8 @@ Launch CursorTint and leave it running in the menu bar.
 
 <img src="images/menu-bar-icon.png" alt="CursorTint menu bar icon" width="132">
 
-- **U.S. input** → uses the default cursor color of the current Terminal profile
-- **Non-U.S. input** → highlights the cursor with `#EB5F5F`
+- **U.S. / ABC / ABC Extended input** → uses the default cursor color of the current Terminal profile
+- **Other input sources** → highlights the cursor with `#EB5F5F`
 - **Quit CursorTint** → restores the Terminal profile's default cursor color
 
 The menu bar provides:
@@ -40,7 +40,7 @@ The menu bar provides:
 
 ### Tips
 
-- Using **U.S. input + one non-U.S. input source you normally use** keeps input switching simple.
+- Using **one default-color input source (U.S., ABC, or ABC Extended) + one other input source you normally use** keeps input switching simple.
 - Use a Terminal cursor color that is easy to distinguish from `#EB5F5F`.
 - A block cursor is recommended because it makes the color change easier to see.
 - If you want CursorTint available immediately after logging in, add it to your macOS Login Items.

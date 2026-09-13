@@ -6,7 +6,7 @@
 
 Using the wrong input mode can result in unintended text in Terminal.  
 CursorTint makes the current input mode visible through the cursor color.  
-U.S. input uses the Terminal default cursor color, while non-U.S. input is highlighted with `#EB5F5F`.
+U.S., ABC, and ABC Extended input sources use the Terminal default cursor color, while other input sources are highlighted with `#EB5F5F`.
 
 <img src="images/cursortint-demo.gif" alt="CursorTint demo" width="720">
 

@@ -86,9 +86,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 			]
 		)
 
+		let version = Bundle.main.object(
+			forInfoDictionaryKey: "CFBundleShortVersionString"
+		) as? String ?? ""
+
 		let options: [NSApplication.AboutPanelOptionKey: Any] = [
 			.applicationName: "CursorTint",
-			.applicationVersion: "0.1.0",
+			.applicationVersion: version,
 			.credits: url
 		]
 

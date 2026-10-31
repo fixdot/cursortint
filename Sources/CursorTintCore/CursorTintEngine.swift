@@ -8,6 +8,8 @@
 //  SPDX-License-Identifier: MIT
 //
 
+import Dispatch
+
 /// Coordinates input-source monitoring and Terminal cursor updates.
 ///
 /// Monitor callbacks are delivered on the main queue, keeping state changes
@@ -24,7 +26,17 @@ public final class CursorTintEngine: @unchecked Sendable {
 		cursorController.refreshTTYPaths()
 
 		inputSourceMonitor.start { [weak self] in
-			self?.applyCurrentInputSource()
+			guard let self else {
+				return
+			}
+
+			self.applyCurrentInputSource()
+
+			// Recheck after 10 ms to account for a possible delay between
+			// the input-source notification and the updated state.
+			DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [weak self] in
+				self?.applyCurrentInputSource()
+			}
 		}
 
 		terminalSessionMonitor.start { [weak self] in

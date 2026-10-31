@@ -10,7 +10,6 @@
 
 /// OSC sequences used to control the Terminal.app cursor color.
 enum CursorColor {
-
 	/// Highlight cursor color used for non-U.S. input sources.
 	static let highlight = "\u{001B}]12;#EB5F5F\u{0007}"
 

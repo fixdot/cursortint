@@ -48,9 +48,17 @@ The menu bar provides:
 ## Compatibility
 
 - macOS 12 or later
-- Tested and supported on Terminal.app. Other terminal applications have not been tested.
 - Apple Silicon: tested
 - Intel Mac: built as a Universal Binary for Intel Macs that support macOS 12 or later, but not tested on actual Intel hardware
+- Terminal.app is the only officially supported and recommended terminal application.
+
+Cursor color changes have also been verified in the following terminal applications that support OSC 12.
+
+| Terminal application | Result                                                  |
+| -------------------- | ------------------------------------------------------- |
+| Ghostty              | Confirmed                                               |
+| iTerm2               | Confirmed (highlight color appears slightly more vivid) |
+| kitty                | Confirmed                                               |
 
 Basic behavior has been confirmed with:
 

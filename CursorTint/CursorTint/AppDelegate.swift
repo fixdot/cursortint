@@ -17,7 +17,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 	private let cursorTint = CursorTintCore.CursorTintEngine()
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
-
 		let statusItem = NSStatusBar.system.statusItem(
 			withLength: NSStatusItem.variableLength
 		)

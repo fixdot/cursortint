@@ -15,6 +15,8 @@ import Carbon
 final class InputSourceMonitor {
 	private var observer: NSObjectProtocol?
 
+	// Treat ABC and ABC Extended as English input sources,
+	// keeping the default cursor color. ABC support was requested in GitHub issue #1.
 	private static let defaultCursorInputSourceIDs: Set<String> = [
 		"com.apple.keylayout.US",
 		"com.apple.keylayout.ABC",

@@ -53,7 +53,8 @@ final class CursorController {
 
 	/// Writes one OSC sequence directly to a TTY device.
 	private func write(_ sequence: String, toTTY path: String) -> Bool {
-		let fd = open(path, O_WRONLY | O_NOCTTY)
+		// Use nonblocking mode to reduce the risk of stalling during TTY teardown.
+		let fd = open(path, O_WRONLY | O_NOCTTY | O_NONBLOCK)
 
 		guard fd >= 0 else {
 			return false

@@ -23,6 +23,28 @@ To uninstall CursorTint, simply delete `CursorTint.app` from the Applications fo
 
 CursorTint is signed with Developer ID and notarized by Apple.
 
+### Homebrew
+
+Install CursorTint using Homebrew:
+
+```bash
+brew tap fixdot/tap
+brew trust --cask fixdot/tap/cursortint
+brew install --cask fixdot/tap/cursortint
+```
+
+To update:
+
+```bash
+brew upgrade --cask fixdot/tap/cursortint
+```
+
+To uninstall:
+
+```bash
+brew uninstall --cask fixdot/tap/cursortint
+```
+
 ## Usage
 
 Launch CursorTint and leave it running in the menu bar.

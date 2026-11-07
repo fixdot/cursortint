@@ -1,6 +1,6 @@
 # CursorTint
 
-**See your Terminal input mode at a glance.**
+## See your Terminal input mode at a glance.
 
 <img src="images/cursortint-new-title-en.png" alt="CursorTint" width="992">
 

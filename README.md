@@ -2,7 +2,7 @@
 
 **See your Terminal input mode at a glance.**
 
-<img src="images/cursortint-title.png" alt="CursorTint" width="100%">
+<img src="images/cursortint-new-title-en.png" alt="CursorTint" width="992">
 
 Using the wrong input mode can result in unintended text in Terminal.  
 CursorTint makes the current input mode visible through the cursor color.  
